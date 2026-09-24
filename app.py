@@ -4,6 +4,7 @@ Premium Streamlit RAG Dashboard
 """
 
 import os
+import time
 import streamlit as st
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
 from langchain_pinecone import PineconeVectorStore
@@ -496,7 +497,18 @@ Context:
 Question: {question}
 
 Answer: """
-    response = llm.invoke(prompt)
+
+    # Retry logic for Groq rate limits (free tier has request limits)
+    for attempt in range(3):
+        try:
+            response = llm.invoke(prompt)
+            break
+        except Exception as e:
+            if "rate" in str(e).lower() and attempt < 2:
+                time.sleep(2 ** attempt)  # wait 1s, then 2s
+                continue
+            raise e
+
     sources = []
     for doc in docs:
         source = os.path.basename(doc.metadata["source"])
