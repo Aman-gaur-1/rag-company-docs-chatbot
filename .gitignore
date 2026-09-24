@@ -1,0 +1,25 @@
+# API Keys & Secrets — NEVER push to GitHub
+.streamlit/secrets.toml
+.streamlit/secrets.toml.py
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+.env/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated PDFs (optional — already in Pinecone)
+company_docs/
