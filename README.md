@@ -1,6 +1,7 @@
 # Company Docs AI Chatbot (End to End RAG Project)
 
-Watch the full build in Hindi: [YouTube link]
+Watch the full build in Hindi: https://youtu.be/EYJLZFHmP7o
+
 Live demo: https://rag-company-docs-chatbot-nvgkrf9snkgzcze2fx3bmv.streamlit.app/
 
 
