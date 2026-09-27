@@ -20,7 +20,7 @@ INDEX_NAME = "rag-index"
 
 # ── Page Config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Company Docs Chatbot — ConsoleFlare",
+    page_title="Company Docs Chatbot - ConsoleFlare",
     page_icon="✦",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -575,8 +575,8 @@ with st.sidebar:
 st.markdown(f"""
 <div class="header-card">
     <div class="eyebrow">✦ ConsoleFlare</div>
-    <div class="header-title">Company Docs Chatbot</div>
-    <div class="header-sub">Ask anything about company policies, procedures, and internal documentation. Answers are grounded in your indexed PDFs — no hallucinations.</div>
+    <div class="header-title">Company Docs Chatbot - [ Enterprise Knowledge Assistant ]</div>
+    <div class="header-sub">Ask anything about company policies, procedures, and internal documentation. Answers are grounded in your indexed PDFs - no hallucinations.</div>
     <div class="status-badge">
         <div class="pulse-dot"></div>
         RAG Pipeline Active
