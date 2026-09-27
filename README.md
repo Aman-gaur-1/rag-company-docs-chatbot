@@ -1,4 +1,4 @@
-# Company Docs AI Chatbot (End to End RAG Project)
+# Company Docs AI Chatbot (End-to-End RAG Project)
 
 Watch the full build in Hindi: https://youtu.be/EYJLZFHmP7o
 
@@ -11,6 +11,6 @@ An AI chatbot that answers questions from company PDFs (HR policy, IT security, 
 
 ## Run it
 1. `pip install -r requirements.txt`
-2. Add NVIDIA_API_KEY, PINECONE_API_KEY and GROQ_API_KEY to `.streamlit/secrets.toml`
+2. Add NVIDIA_API_KEY, PINECONE_API_KEY, and GROQ_API_KEY to `.streamlit/secrets.toml`
 3. `python create_sample_docs.py` then `python step3_embed_store.py`
 4. `streamlit run app.py`
